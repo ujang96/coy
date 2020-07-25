@@ -76,7 +76,7 @@ echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(0);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0607"}');
-        $message = fetch_value($code2,'"message":"','"');
+        $message = fetch_value($code1,'"message":"','"');
         if(strpos($code2, 'sukses coyyyy.')){
         echo "\n".color("green","Message: ".$message);
         goto gofood;
@@ -90,7 +90,7 @@ echo "\e[32m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(0);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAKANGOFOOD2107"}');
-        $message = fetch_value($code3,'"message":"','"');
+        $message = fetch_value($code1,'"message":"','"');
         if(strpos($code3, 'sukses coyyyy.')){
         echo "\n".color("green"," Message: ".$message);
         sleep(2);
